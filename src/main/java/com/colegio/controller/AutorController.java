@@ -28,7 +28,7 @@ public class AutorController {
 	@RequestMapping("/registraAutorA")
 	public String registraAutor(Autor e,Model  model) { 
 		autor_servicio.registrarAutor(e);
-		return "redirect:home"; 
+		return "crudAutor"; 
 		}
 	@RequestMapping("/vercrudAutor")
 	public String vercrud() {

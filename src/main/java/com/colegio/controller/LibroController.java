@@ -28,7 +28,7 @@ public class LibroController {
 	
 	@RequestMapping("/vercrudLibro")
 	public String verCrud() {
-		return "intranetRegistraLibro";
+		return "crudLibro";
 	}
 	@RequestMapping(value="/getTipoLibros",method = RequestMethod.GET,produces = "application/json")
 	@ResponseBody
@@ -40,7 +40,7 @@ public class LibroController {
 	public String lista(String titulo, HttpSession session) {
 		List<Libro> lista =  libroService.traerLibroXTitulo(titulo+"%");
 		session.setAttribute("libros", lista);
-		return "intranetRegistraLibro";
+		return "crudLibro";
 	}
 	@RequestMapping("/registraCrudLibro")
 	public String registraActualiza(Libro obj, HttpSession session) {	
@@ -69,7 +69,7 @@ public class LibroController {
 	public String listarTodosLibros(HttpSession session) {
 		List<Libro> data = libroService.traerLibros();
 		session.setAttribute("libros", data);
-		return "intranetRegistraLibro";
+		return "crudLibro";
 	}
 	
 	

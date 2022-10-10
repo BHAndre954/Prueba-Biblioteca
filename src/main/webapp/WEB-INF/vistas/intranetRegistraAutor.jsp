@@ -24,7 +24,6 @@
        
 <jsp:include page="intranetCabecera.jsp" />
 <div class="container">&nbsp;<br>&nbsp;<br>&nbsp;<br>
-<h4>Registro de Autor</h4>
 <c:if test="${sessionScope.MENSAJE != null}">
 		<div class="alert alert-success fade in" id="success-alert">
 		 <a href="#" class="close" data-dismiss="alert">&times;</a>
@@ -34,8 +33,14 @@
 	<c:remove var="MENSAJE" />
 </div>
 
-<div class="container" >
- <div class="col-md-12" align="center"> 
+
+<div class="modal-dialog" style="width: 60%">
+<div class="modal-content">
+				<div class="modal-header" style="padding: 35px 50px">
+				
+					<h4><span class="glyphicon glyphicon-ok-sign"></span> Registro de Autor</h4>
+				</div>
+				<div class="modal-body" style="padding: 20px 10px;">
 	<form action="registraAutorA" id="id_form" method="post"> 
 			<input type="hidden" name="metodo" value="registra">	
 			<div class="form-group">
@@ -66,6 +71,9 @@
 	</form>
 	
  </div>
+  </div>
+ 
+ 
 </div> 
 <script type="text/javascript">
 /*$.getJSON("cargaPais", {}, function(data){

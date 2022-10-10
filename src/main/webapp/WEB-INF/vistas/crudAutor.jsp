@@ -36,9 +36,7 @@
 						<div class="col-md-2" >
 							<button type="submit" class="btn btn-primary" style="width: 150px">FILTRA</button>
 						</div>
-						<div class="col-md-2">
-							<button type="button" data-toggle='modal' onclick="registrar();"  class='btn btn-success' id="validateBtnw2" style="width: 150px">REGISTRA</button>
-						</div>
+						
 						<div class="col-md-4">
 							<c:if test="${sessionScope.MENSAJE != null }">
 									<div class="alert alert-success" id="success-alert">

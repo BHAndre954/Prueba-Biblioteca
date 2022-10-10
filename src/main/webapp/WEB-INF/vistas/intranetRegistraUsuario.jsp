@@ -33,8 +33,13 @@
 	<c:remove var="MENSAJE" />
 </div>
 
-<div class="container" >
- <div class="col-md-12" align="center"> 
+<div class="modal-dialog" style="width: 60%">
+<div class="modal-content">
+				<div class="modal-header" style="padding: 35px 50px">
+				
+					<h4><span class="glyphicon glyphicon-ok-sign"></span> Registro de Usuario</h4>
+				</div>
+				<div class="modal-body" style="padding: 20px 10px;">
 	<form action="registraUsuarioBD" id="id_form" method="post"> 
 			<input type="hidden" name="metodo" value="registra">	
 			<div class="form-group">
@@ -101,7 +106,7 @@
 			<div class="form-group">
 				<button type="submit" class="btn btn-primary" >Registra Usuario</button>
 			</div>
-			
+				</div>
 			
 <script type="text/javascript">
 
